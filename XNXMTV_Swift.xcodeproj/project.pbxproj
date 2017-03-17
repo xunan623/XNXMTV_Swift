@@ -10,6 +10,14 @@
 		71A16CA21E7B6FA1008289CA /* XNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CA11E7B6FA1008289CA /* XNTabBarController.swift */; };
 		71A16CA71E7BAE06008289CA /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CA61E7BAE06008289CA /* UIColor-Extension.swift */; };
 		71A16CA91E7BAF17008289CA /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CA81E7BAF17008289CA /* Common.swift */; };
+		71A16CAB1E7BB3E7008289CA /* XNNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CAA1E7BB3E7008289CA /* XNNavigationController.swift */; };
+		71A16CAD1E7BB475008289CA /* XNBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CAC1E7BB475008289CA /* XNBaseController.swift */; };
+		71A16CAF1E7BB4C5008289CA /* XNHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CAE1E7BB4C5008289CA /* XNHomeController.swift */; };
+		71A16CB11E7BB60B008289CA /* XNGameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CB01E7BB60B008289CA /* XNGameController.swift */; };
+		71A16CB31E7BB66A008289CA /* XNEntertainmentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CB21E7BB66A008289CA /* XNEntertainmentController.swift */; };
+		71A16CB51E7BB6BF008289CA /* XNSmallShowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CB41E7BB6BF008289CA /* XNSmallShowController.swift */; };
+		71A16CB71E7BB735008289CA /* XNMe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71A16CB61E7BB735008289CA /* XNMe.storyboard */; };
+		71A16CB91E7BB78F008289CA /* XNMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CB81E7BB78F008289CA /* XNMeController.swift */; };
 		71B051D51E7A85E500380B04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71B051D41E7A85E500380B04 /* AppDelegate.swift */; };
 		71B051DC1E7A85E500380B04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71B051DB1E7A85E500380B04 /* Assets.xcassets */; };
 		E03CA7F29106CDBEC0A69B6A /* Pods_XNXMTV_Swift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2586CCBFDC771A2A087C2AFC /* Pods_XNXMTV_Swift.framework */; };
@@ -21,6 +29,14 @@
 		71A16CA11E7B6FA1008289CA /* XNTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNTabBarController.swift; sourceTree = "<group>"; };
 		71A16CA61E7BAE06008289CA /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		71A16CA81E7BAF17008289CA /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		71A16CAA1E7BB3E7008289CA /* XNNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNNavigationController.swift; sourceTree = "<group>"; };
+		71A16CAC1E7BB475008289CA /* XNBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBaseController.swift; sourceTree = "<group>"; };
+		71A16CAE1E7BB4C5008289CA /* XNHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNHomeController.swift; sourceTree = "<group>"; };
+		71A16CB01E7BB60B008289CA /* XNGameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNGameController.swift; sourceTree = "<group>"; };
+		71A16CB21E7BB66A008289CA /* XNEntertainmentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNEntertainmentController.swift; sourceTree = "<group>"; };
+		71A16CB41E7BB6BF008289CA /* XNSmallShowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNSmallShowController.swift; sourceTree = "<group>"; };
+		71A16CB61E7BB735008289CA /* XNMe.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = XNMe.storyboard; sourceTree = "<group>"; };
+		71A16CB81E7BB78F008289CA /* XNMeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNMeController.swift; sourceTree = "<group>"; };
 		71B051D11E7A85E500380B04 /* XNXMTV_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XNXMTV_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71B051D41E7A85E500380B04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		71B051DB1E7A85E500380B04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +83,7 @@
 		71A16C861E7B6EA0008289CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				71A16CB21E7BB66A008289CA /* XNEntertainmentController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -98,6 +115,7 @@
 		71A16C8A1E7B6EA0008289CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				71A16CB01E7BB60B008289CA /* XNGameController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -129,6 +147,7 @@
 		71A16C8E1E7B6EA0008289CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				71A16CAE1E7BB4C5008289CA /* XNHomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -161,6 +180,8 @@
 			isa = PBXGroup;
 			children = (
 				71A16CA11E7B6FA1008289CA /* XNTabBarController.swift */,
+				71A16CAA1E7BB3E7008289CA /* XNNavigationController.swift */,
+				71A16CAC1E7BB475008289CA /* XNBaseController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -192,6 +213,8 @@
 		71A16C961E7B6EA0008289CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				71A16CB61E7BB735008289CA /* XNMe.storyboard */,
+				71A16CB81E7BB78F008289CA /* XNMeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -223,6 +246,7 @@
 		71A16C9A1E7B6EA0008289CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				71A16CB41E7BB6BF008289CA /* XNSmallShowController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -333,6 +357,7 @@
 		71B051C91E7A85E500380B04 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = XN;
 				LastSwiftUpdateCheck = 0820;
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = xunan;
@@ -367,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A16CB71E7BB735008289CA /* XNMe.storyboard in Resources */,
 				71B051DC1E7A85E500380B04 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -426,9 +452,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71A16CB91E7BB78F008289CA /* XNMeController.swift in Sources */,
+				71A16CAF1E7BB4C5008289CA /* XNHomeController.swift in Sources */,
+				71A16CAD1E7BB475008289CA /* XNBaseController.swift in Sources */,
 				71A16CA91E7BAF17008289CA /* Common.swift in Sources */,
 				71B051D51E7A85E500380B04 /* AppDelegate.swift in Sources */,
+				71A16CAB1E7BB3E7008289CA /* XNNavigationController.swift in Sources */,
+				71A16CB11E7BB60B008289CA /* XNGameController.swift in Sources */,
+				71A16CB31E7BB66A008289CA /* XNEntertainmentController.swift in Sources */,
 				71A16CA71E7BAE06008289CA /* UIColor-Extension.swift in Sources */,
+				71A16CB51E7BB6BF008289CA /* XNSmallShowController.swift in Sources */,
 				71A16CA21E7B6FA1008289CA /* XNTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
