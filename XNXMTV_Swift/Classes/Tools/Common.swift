@@ -49,8 +49,8 @@ class Common: NSObject {
         return UIBarButtonItem.init(customView: button)
     }
     
-//    // MARK: -解档归档(保存的是GameModel数组)
-//    // 归档
+    // MARK: -解档归档(保存的是GameModel数组)
+    // 归档
 //    func archiveData(channel: [GameModel], appendPath: String) {
 //        let filePath = path.appendingPathComponent(appendPath)
 //        NSKeyedArchiver.archiveRootObject(channel, toFile: filePath)
