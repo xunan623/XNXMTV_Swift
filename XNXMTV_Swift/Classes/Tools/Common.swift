@@ -51,16 +51,16 @@ class Common: NSObject {
     
     // MARK: -解档归档(保存的是GameModel数组)
     // 归档
-//    func archiveData(channel: [GameModel], appendPath: String) {
-//        let filePath = path.appendingPathComponent(appendPath)
-//        NSKeyedArchiver.archiveRootObject(channel, toFile: filePath)
-//    }
-//    
-//    //反归档
-//    func unarchiveData(appendPath: String) -> ([GameModel]?) {
-//        let filePath = path.appendingPathComponent(appendPath)
-//        return NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [GameModel]
-//    }
+    func archiveData(channel: [XNGameModel], appendPath: String) {
+        let filePath = path.appendingPathComponent(appendPath)
+        NSKeyedArchiver.archiveRootObject(channel, toFile: filePath)
+    }
+    
+    //反归档
+    func unarchiveData(appendPath: String) -> ([XNGameModel]?) {
+        let filePath = path.appendingPathComponent(appendPath)
+        return NSKeyedUnarchiver.unarchiveObject(withFile: filePath) as? [XNGameModel]
+    }
     
     // MARK: -解档归档(保存的是String数组)
     // 归档

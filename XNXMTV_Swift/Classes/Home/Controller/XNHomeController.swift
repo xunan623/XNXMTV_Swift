@@ -30,7 +30,6 @@ class XNHomeController: XNBaseController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         setupUI()
     }
 

@@ -190,7 +190,13 @@ extension XNPageMenuView {
             let vc = nextResponder as! UIViewController
             let subcatevc = AllSubcaateController()
             vc.navigationController?.pushViewController(subcatevc, animated: true)
-            
+            subcatevc.channelBlock = { channels in
+                var newTitles = ["精彩推荐", "全部直播"]
+                for model in channels {
+                    newTitles.append(model.cname)
+                }
+                self.reloadTitles(newTitles)
+            }
         }
         
     }

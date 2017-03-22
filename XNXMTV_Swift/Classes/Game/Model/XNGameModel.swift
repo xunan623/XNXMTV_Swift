@@ -8,7 +8,7 @@
 
 import UIKit
 
-class XNGameModel: NSObject {
+class XNGameModel: NSObject, NSCoding {
     
     var cname: String = ""
     var ename: String = ""
