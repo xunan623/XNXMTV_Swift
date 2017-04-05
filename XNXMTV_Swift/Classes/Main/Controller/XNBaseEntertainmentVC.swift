@@ -59,6 +59,7 @@ extension XNBaseEntertainmentVC : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NormalCellID, for: indexPath) as! XNCollectionNormalCell
+        cell.anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
         return cell
     }
 }

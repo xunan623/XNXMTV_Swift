@@ -71,6 +71,11 @@ extension XNGameController: UICollectionViewDataSource, UICollectionViewDelegate
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
+        let moreVC = XNMoreLivingController()
+        let model = gameVM.gameArray[indexPath.item]
+        moreVC.cateName = model.ename
+        moreVC.title = model.cname
+        self.navigationController?.pushViewController(moreVC, animated: true)
     }
 }
 

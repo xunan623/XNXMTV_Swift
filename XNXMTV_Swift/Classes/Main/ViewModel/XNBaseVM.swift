@@ -25,6 +25,7 @@ class XNBaseVM: NSObject {
                     self.anchorGroups.append(XNAnchorGroup(dict: dict))
                 }
             }
+            funishedCallback()
             
         }
         
