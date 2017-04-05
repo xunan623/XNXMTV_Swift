@@ -89,6 +89,8 @@ extension XNPageMenuView {
         let newTitles = common.unarchiveToStringArray(appendPath: PAGE_TITLES)
         if newTitles != nil {
             self.titles = newTitles!
+            print("newtitles-", self.titles)
+
         }
         
         print("titles--", self.titles)
@@ -147,6 +149,9 @@ extension XNPageMenuView {
         
         sender.setTitleColor(selectedColor, for: .normal)
         oldButton.setTitleColor(normalColor, for: .normal)
+        
+        sender.setImage(UIImage(named: titleToSting(title: sender.currentTitle!) + "_h_icon_13x13_"), for: .normal)
+        oldButton.setImage(UIImage(named: titleToSting(title: oldButton.currentTitle!) + "_icon_13x13_"), for: .normal)
         currentButtonIndex = sender.tag
         
         let scrollLinePosition = sender.frame.origin.x + sender.frame.width * 0.1

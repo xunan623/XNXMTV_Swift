@@ -36,7 +36,7 @@ class XNHomeController: XNBaseController {
 }
 
 extension XNHomeController {
-    fileprivate func setupUI() {
+    internal override func setupUI() {
         automaticallyAdjustsScrollViewInsets = false
         navigationItem.titleView = UIImageView(image: UIImage(named: "title_image"))
         view.addSubview(pageMenuView)
