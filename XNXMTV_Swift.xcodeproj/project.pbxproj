@@ -30,6 +30,16 @@
 		7155B2D51E8F9C7D007B7BE5 /* XNCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155B2D41E8F9C7D007B7BE5 /* XNCycleModel.swift */; };
 		7155B2D81E8FA126007B7BE5 /* XNCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155B2D61E8FA126007B7BE5 /* XNCollectionNormalCell.swift */; };
 		7155B2D91E8FA126007B7BE5 /* XNCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7155B2D71E8FA126007B7BE5 /* XNCollectionNormalCell.xib */; };
+		717F3C641E95D4D800FAFBCB /* XNBaseRecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C631E95D4D800FAFBCB /* XNBaseRecommendVC.swift */; };
+		717F3C661E95D50000FAFBCB /* XNRecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C651E95D50000FAFBCB /* XNRecommendVC.swift */; };
+		717F3C681E95D53300FAFBCB /* XNBaseSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C671E95D53300FAFBCB /* XNBaseSearchVC.swift */; };
+		717F3C6A1E95D56D00FAFBCB /* XNAllLivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C691E95D56D00FAFBCB /* XNAllLivingVC.swift */; };
+		717F3C6C1E95E2FC00FAFBCB /* XNBaseAllLivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C6B1E95E2FC00FAFBCB /* XNBaseAllLivingVC.swift */; };
+		717F3C6E1E96143000FAFBCB /* XNRecommendVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C6D1E96143000FAFBCB /* XNRecommendVM.swift */; };
+		717F3C701E961A8C00FAFBCB /* XNBannerCycleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C6F1E961A8C00FAFBCB /* XNBannerCycleView.swift */; };
+		717F3C721E961A9800FAFBCB /* XNBannerCycleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717F3C711E961A9800FAFBCB /* XNBannerCycleView.xib */; };
+		717F3C751E9622AA00FAFBCB /* XNCollectionCycleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C731E9622AA00FAFBCB /* XNCollectionCycleCell.swift */; };
+		717F3C761E9622AA00FAFBCB /* XNCollectionCycleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 717F3C741E9622AA00FAFBCB /* XNCollectionCycleCell.xib */; };
 		7185FA9B1E94958900F69524 /* XNMoreLivingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185FA9A1E94958900F69524 /* XNMoreLivingController.swift */; };
 		7185FA9E1E949AF500F69524 /* XNMoreLivingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185FA9D1E949AF500F69524 /* XNMoreLivingVM.swift */; };
 		71A16CA21E7B6FA1008289CA /* XNTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71A16CA11E7B6FA1008289CA /* XNTabBarController.swift */; };
@@ -76,6 +86,16 @@
 		7155B2D41E8F9C7D007B7BE5 /* XNCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCycleModel.swift; sourceTree = "<group>"; };
 		7155B2D61E8FA126007B7BE5 /* XNCollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCollectionNormalCell.swift; sourceTree = "<group>"; };
 		7155B2D71E8FA126007B7BE5 /* XNCollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNCollectionNormalCell.xib; sourceTree = "<group>"; };
+		717F3C631E95D4D800FAFBCB /* XNBaseRecommendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBaseRecommendVC.swift; sourceTree = "<group>"; };
+		717F3C651E95D50000FAFBCB /* XNRecommendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNRecommendVC.swift; sourceTree = "<group>"; };
+		717F3C671E95D53300FAFBCB /* XNBaseSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBaseSearchVC.swift; sourceTree = "<group>"; };
+		717F3C691E95D56D00FAFBCB /* XNAllLivingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNAllLivingVC.swift; sourceTree = "<group>"; };
+		717F3C6B1E95E2FC00FAFBCB /* XNBaseAllLivingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBaseAllLivingVC.swift; sourceTree = "<group>"; };
+		717F3C6D1E96143000FAFBCB /* XNRecommendVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNRecommendVM.swift; sourceTree = "<group>"; };
+		717F3C6F1E961A8C00FAFBCB /* XNBannerCycleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBannerCycleView.swift; sourceTree = "<group>"; };
+		717F3C711E961A9800FAFBCB /* XNBannerCycleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNBannerCycleView.xib; sourceTree = "<group>"; };
+		717F3C731E9622AA00FAFBCB /* XNCollectionCycleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCollectionCycleCell.swift; sourceTree = "<group>"; };
+		717F3C741E9622AA00FAFBCB /* XNCollectionCycleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNCollectionCycleCell.xib; sourceTree = "<group>"; };
 		7185FA9A1E94958900F69524 /* XNMoreLivingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNMoreLivingController.swift; sourceTree = "<group>"; };
 		7185FA9D1E949AF500F69524 /* XNMoreLivingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNMoreLivingVM.swift; sourceTree = "<group>"; };
 		71A16CA11E7B6FA1008289CA /* XNTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNTabBarController.swift; sourceTree = "<group>"; };
@@ -139,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				7185FA9D1E949AF500F69524 /* XNMoreLivingVM.swift */,
+				717F3C6D1E96143000FAFBCB /* XNRecommendVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -249,6 +270,8 @@
 				71A16CAE1E7BB4C5008289CA /* XNHomeController.swift */,
 				713A33731E7F63990022DF35 /* AllSubcaateController.swift */,
 				7185FA9A1E94958900F69524 /* XNMoreLivingController.swift */,
+				717F3C651E95D50000FAFBCB /* XNRecommendVC.swift */,
+				717F3C691E95D56D00FAFBCB /* XNAllLivingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -288,6 +311,9 @@
 				71A16CAA1E7BB3E7008289CA /* XNNavigationController.swift */,
 				71A16CAC1E7BB475008289CA /* XNBaseController.swift */,
 				7155B2C91E8F9B40007B7BE5 /* XNBaseEntertainmentVC.swift */,
+				717F3C631E95D4D800FAFBCB /* XNBaseRecommendVC.swift */,
+				717F3C671E95D53300FAFBCB /* XNBaseSearchVC.swift */,
+				717F3C6B1E95E2FC00FAFBCB /* XNBaseAllLivingVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -308,6 +334,10 @@
 				7155B2D61E8FA126007B7BE5 /* XNCollectionNormalCell.swift */,
 				7155B2D71E8FA126007B7BE5 /* XNCollectionNormalCell.xib */,
 				711449DD1E94DC13000B753F /* XNPageContentView.swift */,
+				717F3C6F1E961A8C00FAFBCB /* XNBannerCycleView.swift */,
+				717F3C711E961A9800FAFBCB /* XNBannerCycleView.xib */,
+				717F3C731E9622AA00FAFBCB /* XNCollectionCycleCell.swift */,
+				717F3C741E9622AA00FAFBCB /* XNCollectionCycleCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -506,10 +536,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7155B2D91E8FA126007B7BE5 /* XNCollectionNormalCell.xib in Resources */,
+				717F3C721E961A9800FAFBCB /* XNBannerCycleView.xib in Resources */,
 				71A16CB71E7BB735008289CA /* XNMe.storyboard in Resources */,
 				7155B2C81E8F9834007B7BE5 /* XNCollectionGameCell.xib in Resources */,
 				71B051DC1E7A85E500380B04 /* Assets.xcassets in Resources */,
 				713A33781E7F77BE0022DF35 /* XNCollectionSubcateCell.xib in Resources */,
+				717F3C761E9622AA00FAFBCB /* XNCollectionCycleCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -575,9 +607,11 @@
 				711449DC1E94CBBF000B753F /* XNPageTitleView.swift in Sources */,
 				71A16CAD1E7BB475008289CA /* XNBaseController.swift in Sources */,
 				71A16CA91E7BAF17008289CA /* Common.swift in Sources */,
+				717F3C751E9622AA00FAFBCB /* XNCollectionCycleCell.swift in Sources */,
 				711449E21E94F1DC000B753F /* XNOutdoorLivingVC.swift in Sources */,
 				7155B2D31E8F9C64007B7BE5 /* XNTypeModel.swift in Sources */,
 				71A16CBD1E7BBCF2008289CA /* XNGameModel.swift in Sources */,
+				717F3C6A1E95D56D00FAFBCB /* XNAllLivingVC.swift in Sources */,
 				7185FA9E1E949AF500F69524 /* XNMoreLivingVM.swift in Sources */,
 				7155B2CA1E8F9B40007B7BE5 /* XNBaseEntertainmentVC.swift in Sources */,
 				713A33841E7FE0FA0022DF35 /* XNAppURL.swift in Sources */,
@@ -590,9 +624,14 @@
 				71A16CAB1E7BB3E7008289CA /* XNNavigationController.swift in Sources */,
 				7155B2D81E8FA126007B7BE5 /* XNCollectionNormalCell.swift in Sources */,
 				71A16CB11E7BB60B008289CA /* XNGameController.swift in Sources */,
+				717F3C701E961A8C00FAFBCB /* XNBannerCycleView.swift in Sources */,
+				717F3C641E95D4D800FAFBCB /* XNBaseRecommendVC.swift in Sources */,
 				71A16CB31E7BB66A008289CA /* XNEntertainmentController.swift in Sources */,
 				71A16CA71E7BAE06008289CA /* UIColor-Extension.swift in Sources */,
+				717F3C661E95D50000FAFBCB /* XNRecommendVC.swift in Sources */,
 				7155B2CD1E8F9BB7007B7BE5 /* XNBaseVM.swift in Sources */,
+				717F3C6E1E96143000FAFBCB /* XNRecommendVM.swift in Sources */,
+				717F3C681E95D53300FAFBCB /* XNBaseSearchVC.swift in Sources */,
 				71A16CB51E7BB6BF008289CA /* XNSmallShowController.swift in Sources */,
 				713A33741E7F63990022DF35 /* AllSubcaateController.swift in Sources */,
 				713A33801E7FDDA80022DF35 /* XNNetworkTool.swift in Sources */,
@@ -602,6 +641,7 @@
 				711449E01E94F1BE000B753F /* XNPandaStarShowVC.swift in Sources */,
 				7155B2D51E8F9C7D007B7BE5 /* XNCycleModel.swift in Sources */,
 				71A16CA21E7B6FA1008289CA /* XNTabBarController.swift in Sources */,
+				717F3C6C1E95E2FC00FAFBCB /* XNBaseAllLivingVC.swift in Sources */,
 				711449D81E94C2C6000B753F /* XNLivelistModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

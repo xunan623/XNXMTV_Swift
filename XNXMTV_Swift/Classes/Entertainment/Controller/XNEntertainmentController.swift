@@ -17,7 +17,7 @@ class XNEntertainmentController: UIViewController {
     fileprivate lazy var pageTitleView : XNPageTitleView = { [weak self] in
         let titleFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH, width: kScreenW, height: kTitleViewH)
         let titleView = XNPageTitleView(frame: titleFrame, titles: (self?.titles)!)
-        titleView.delegate = self as! XNPageTitleViewDelegate?
+        titleView.delegate = self
         return titleView
     }()
     
@@ -31,13 +31,17 @@ class XNEntertainmentController: UIViewController {
         childVcs.append(XNTableGamesVC())
 
         let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVC: self)
-        contentView.delegate = self as XNPageContentViewDelegate?
+        contentView.delegate = self
         return contentView
     }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
     }
     
 }

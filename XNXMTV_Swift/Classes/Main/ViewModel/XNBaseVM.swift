@@ -11,7 +11,7 @@ import UIKit
 class XNBaseVM: NSObject {
     
     lazy var anchorGroups: [XNAnchorGroup] = [XNAnchorGroup]()
-    func loadAnchorGroupData(isLiveData : Bool, URLString : String, parameters : [String : Any]? = nil, funishedCallback : @escaping () -> ()) {
+    func loadAnchorGroupData(isLiveData : Bool, URLString : String, parameters : [String : Any]? = nil, finishedCallback : @escaping () -> ()) {
         
         XNNetworkTool.reqeust(type: .GET, urlString: URLString, paramters: parameters) { (result) in
             
@@ -25,7 +25,7 @@ class XNBaseVM: NSObject {
                     self.anchorGroups.append(XNAnchorGroup(dict: dict))
                 }
             }
-            funishedCallback()
+            finishedCallback()
             
         }
         

@@ -155,14 +155,14 @@ extension XNPageContentView {
         collectionView.reloadData()
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
+    // MARK: - 没有添加频道或者移除了所有的频道,回到默认状态
+    public func setDefaultChildVcs() {
+        // 移除 "精彩推荐" 和 "全部直播" 两个频道之外的所有控制器
+        let counts = self.childVcs.count - defaultVcsCount
+        updateChildVcs(count: counts)
+        UserDefaults.standard.set(self.childVcs.count, forKey: HOME_CHILDVCS)
+        collectionView.reloadData()
+    }
     
     // MARK: - 更新控制器
     func updateChildVcs(count: Int) {
