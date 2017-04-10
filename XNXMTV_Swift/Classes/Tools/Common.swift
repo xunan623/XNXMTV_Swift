@@ -26,8 +26,8 @@ let kHeaderViewH : CGFloat = 50
 let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
 let kNormalItemH = kNormalItemW * 3 / 4
 let NormalCellID = "XNCollectionNormalCell"
-let SearchCellID = "SearchCellID"
-let HeaderViewID = "HeaderViewID"
+let SearchCellID = "XNCollectionSearchCell"
+let HeaderViewID = "XNCollectionHeaderView"
 
 let kStatusBarH: CGFloat = 20
 let kNavigationBarH: CGFloat = 44

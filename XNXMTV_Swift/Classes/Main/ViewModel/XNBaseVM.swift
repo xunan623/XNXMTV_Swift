@@ -30,5 +30,17 @@ class XNBaseVM: NSObject {
         }
         
     }
+    
+    // MARK: - items, total
+    lazy var searchGroup: [XNSearchModel] = [XNSearchModel]()
+    func loadSearchData(URLString : String, parameters : [String : Any]? = nil, finishedCallback : @escaping () -> ()) {
+
+        XNNetworkTool.reqeust(type: .GET, urlString: URLString, paramters: parameters) { (result) in
+            guard let dict = result as? [String : Any] else { return }
+            guard let dictionary = dict["data"] as? [String : Any] else { return }
+            self.searchGroup.append(XNSearchModel(dict: dictionary))
+            finishedCallback()
+        }
+    }
 
 }

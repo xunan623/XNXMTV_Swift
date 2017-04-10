@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="XNCollectionSearchCell" reuseIdentifier="XNCollectionSearchCell" id="gTV-IL-0wX" customClass="XNCollectionSearchCell" customModule="XNXMTV_Swift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="235" height="153"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="235" height="153"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homepage_refresh_tv" translatesAutoresizingMaskIntoConstraints="NO" id="fWy-bb-sHl">
+                        <rect key="frame" x="0.0" y="0.0" width="235" height="123"/>
+                    </imageView>
+                    <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZ9-E2-eRc">
+                        <rect key="frame" x="0.0" y="105" width="235" height="18"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吃货天堂" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efd-fY-wYO">
+                                <rect key="frame" x="5" y="0.0" width="230" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Efd-fY-wYO" firstAttribute="top" secondItem="DZ9-E2-eRc" secondAttribute="top" id="87f-Q4-i1U"/>
+                            <constraint firstAttribute="trailing" secondItem="Efd-fY-wYO" secondAttribute="trailing" id="HZz-JF-FyA"/>
+                            <constraint firstAttribute="bottom" secondItem="Efd-fY-wYO" secondAttribute="bottom" id="UJM-XF-v0k"/>
+                            <constraint firstAttribute="height" constant="18" id="iUu-ai-4tb"/>
+                            <constraint firstItem="Efd-fY-wYO" firstAttribute="leading" secondItem="DZ9-E2-eRc" secondAttribute="leading" constant="5" id="rWk-k6-WPD"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" alpha="0.89999997615814209" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vNC-Ty-taY">
+                        <rect key="frame" x="169" y="123" width="61" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="61" id="XTn-rN-DZd"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                        <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="-3" maxY="0.0"/>
+                        <inset key="imageEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <state key="normal" title="6668" image="look_image">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我擦" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ywI-UV-7jV">
+                        <rect key="frame" x="5" y="127.5" width="159" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="CmZ-ir-0dz"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="DZ9-E2-eRc" firstAttribute="bottom" secondItem="fWy-bb-sHl" secondAttribute="bottom" id="4LI-8a-aCu"/>
+                <constraint firstAttribute="bottom" secondItem="vNC-Ty-taY" secondAttribute="bottom" id="6oU-fy-A6z"/>
+                <constraint firstItem="vNC-Ty-taY" firstAttribute="leading" secondItem="ywI-UV-7jV" secondAttribute="trailing" constant="5" id="Ie0-Ml-Gqr"/>
+                <constraint firstAttribute="trailing" secondItem="DZ9-E2-eRc" secondAttribute="trailing" id="NHp-af-8TU"/>
+                <constraint firstItem="fWy-bb-sHl" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="TMY-7W-92c"/>
+                <constraint firstItem="DZ9-E2-eRc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="WQA-MN-sgS"/>
+                <constraint firstItem="vNC-Ty-taY" firstAttribute="top" secondItem="DZ9-E2-eRc" secondAttribute="bottom" id="WjM-j8-OcT"/>
+                <constraint firstItem="fWy-bb-sHl" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Y1Q-Fg-kSt"/>
+                <constraint firstItem="ywI-UV-7jV" firstAttribute="centerY" secondItem="vNC-Ty-taY" secondAttribute="centerY" id="YQu-35-X5c"/>
+                <constraint firstItem="ywI-UV-7jV" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="djX-fE-ay8"/>
+                <constraint firstAttribute="trailing" secondItem="fWy-bb-sHl" secondAttribute="trailing" id="nAk-kH-TAq"/>
+                <constraint firstAttribute="trailing" secondItem="vNC-Ty-taY" secondAttribute="trailing" constant="5" id="oDB-tn-wma"/>
+                <constraint firstAttribute="bottom" secondItem="fWy-bb-sHl" secondAttribute="bottom" constant="30" id="r11-3D-Sbc"/>
+            </constraints>
+            <connections>
+                <outlet property="iconImageView" destination="fWy-bb-sHl" id="ikq-qz-cSl"/>
+                <outlet property="nameLabel" destination="ywI-UV-7jV" id="vuL-vn-FkP"/>
+                <outlet property="nickNameLabel" destination="Efd-fY-wYO" id="6cE-dR-mxE"/>
+                <outlet property="onlineBtn" destination="vNC-Ty-taY" id="NFa-12-aXg"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="-45"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="homepage_refresh_tv" width="56" height="60"/>
+        <image name="look_image" width="12" height="12"/>
+    </resources>
+</document>

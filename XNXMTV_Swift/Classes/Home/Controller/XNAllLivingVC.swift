@@ -9,6 +9,7 @@
 import UIKit
 
 class XNAllLivingVC: XNBaseSearchVC {
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
