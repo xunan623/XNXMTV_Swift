@@ -15,6 +15,11 @@
 		711449E41E94F1F4000B753F /* XNMusicVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711449E31E94F1F4000B753F /* XNMusicVC.swift */; };
 		711449E61E94F20E000B753F /* XNLovelyPetsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711449E51E94F20E000B753F /* XNLovelyPetsVC.swift */; };
 		711449E81E94F225000B753F /* XNTableGamesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711449E71E94F225000B753F /* XNTableGamesVC.swift */; };
+		7129F6AB1E9B57D2003CBD42 /* XNPandaStarShowVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129F6AA1E9B57D2003CBD42 /* XNPandaStarShowVM.swift */; };
+		7129F6AD1E9B589B003CBD42 /* XNOutdoorLivingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129F6AC1E9B589B003CBD42 /* XNOutdoorLivingVM.swift */; };
+		7129F6AF1E9B58F5003CBD42 /* XNMusicVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129F6AE1E9B58F5003CBD42 /* XNMusicVM.swift */; };
+		7129F6B11E9B593E003CBD42 /* XNLovelyPetsVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129F6B01E9B593E003CBD42 /* XNLovelyPetsVM.swift */; };
+		7129F6B31E9B598F003CBD42 /* XNTableGamesVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7129F6B21E9B598F003CBD42 /* XNTableGamesVM.swift */; };
 		712A24FF1E9774D300EA5F1A /* XNCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A24FD1E9774D300EA5F1A /* XNCollectionHeaderView.swift */; };
 		712A25001E9774D300EA5F1A /* XNCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 712A24FE1E9774D300EA5F1A /* XNCollectionHeaderView.xib */; };
 		712A25021E9796BD00EA5F1A /* XNAllLivingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712A25011E9796BD00EA5F1A /* XNAllLivingVM.swift */; };
@@ -78,6 +83,11 @@
 		711449E31E94F1F4000B753F /* XNMusicVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNMusicVC.swift; sourceTree = "<group>"; };
 		711449E51E94F20E000B753F /* XNLovelyPetsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNLovelyPetsVC.swift; sourceTree = "<group>"; };
 		711449E71E94F225000B753F /* XNTableGamesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNTableGamesVC.swift; sourceTree = "<group>"; };
+		7129F6AA1E9B57D2003CBD42 /* XNPandaStarShowVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNPandaStarShowVM.swift; sourceTree = "<group>"; };
+		7129F6AC1E9B589B003CBD42 /* XNOutdoorLivingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNOutdoorLivingVM.swift; sourceTree = "<group>"; };
+		7129F6AE1E9B58F5003CBD42 /* XNMusicVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNMusicVM.swift; sourceTree = "<group>"; };
+		7129F6B01E9B593E003CBD42 /* XNLovelyPetsVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNLovelyPetsVM.swift; sourceTree = "<group>"; };
+		7129F6B21E9B598F003CBD42 /* XNTableGamesVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNTableGamesVM.swift; sourceTree = "<group>"; };
 		712A24FD1E9774D300EA5F1A /* XNCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCollectionHeaderView.swift; sourceTree = "<group>"; };
 		712A24FE1E9774D300EA5F1A /* XNCollectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNCollectionHeaderView.xib; sourceTree = "<group>"; };
 		712A25011E9796BD00EA5F1A /* XNAllLivingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNAllLivingVM.swift; sourceTree = "<group>"; };
@@ -144,6 +154,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7129F6A91E9B57B7003CBD42 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7129F6AA1E9B57D2003CBD42 /* XNPandaStarShowVM.swift */,
+				7129F6AC1E9B589B003CBD42 /* XNOutdoorLivingVM.swift */,
+				7129F6AE1E9B58F5003CBD42 /* XNMusicVM.swift */,
+				7129F6B01E9B593E003CBD42 /* XNLovelyPetsVM.swift */,
+				7129F6B21E9B598F003CBD42 /* XNTableGamesVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		713A337E1E7FDD8A0022DF35 /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +218,7 @@
 		71A16C851E7B6EA0008289CA /* Entertainment */ = {
 			isa = PBXGroup;
 			children = (
+				7129F6A91E9B57B7003CBD42 /* ViewModel */,
 				71A16C861E7B6EA0008289CA /* Controller */,
 				71A16C871E7B6EA0008289CA /* Model */,
 				71A16C881E7B6EA0008289CA /* View */,
@@ -624,6 +647,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				711449E81E94F225000B753F /* XNTableGamesVC.swift in Sources */,
+				7129F6AB1E9B57D2003CBD42 /* XNPandaStarShowVM.swift in Sources */,
 				71A16CB91E7BB78F008289CA /* XNMeController.swift in Sources */,
 				71A16CAF1E7BB4C5008289CA /* XNHomeController.swift in Sources */,
 				7155B2C71E8F9834007B7BE5 /* XNCollectionGameCell.swift in Sources */,
@@ -656,6 +680,7 @@
 				717F3C661E95D50000FAFBCB /* XNRecommendVC.swift in Sources */,
 				7155B2CD1E8F9BB7007B7BE5 /* XNBaseVM.swift in Sources */,
 				717F3C6E1E96143000FAFBCB /* XNRecommendVM.swift in Sources */,
+				7129F6AD1E9B589B003CBD42 /* XNOutdoorLivingVM.swift in Sources */,
 				717F3C681E95D53300FAFBCB /* XNBaseSearchVC.swift in Sources */,
 				712A25041E97978400EA5F1A /* XNSearchModel.swift in Sources */,
 				71A16CB51E7BB6BF008289CA /* XNSmallShowController.swift in Sources */,
@@ -667,10 +692,13 @@
 				711449E01E94F1BE000B753F /* XNPandaStarShowVC.swift in Sources */,
 				7155B2D51E8F9C7D007B7BE5 /* XNCycleModel.swift in Sources */,
 				71A16CA21E7B6FA1008289CA /* XNTabBarController.swift in Sources */,
+				7129F6B31E9B598F003CBD42 /* XNTableGamesVM.swift in Sources */,
 				712A25021E9796BD00EA5F1A /* XNAllLivingVM.swift in Sources */,
+				7129F6B11E9B593E003CBD42 /* XNLovelyPetsVM.swift in Sources */,
 				717F3C6C1E95E2FC00FAFBCB /* XNBaseAllLivingVC.swift in Sources */,
 				711449D81E94C2C6000B753F /* XNLivelistModel.swift in Sources */,
 				712A25061E9797A600EA5F1A /* XNSearchListModel.swift in Sources */,
+				7129F6AF1E9B58F5003CBD42 /* XNMusicVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,12 +10,15 @@ import UIKit
 
 class XNMusicVC: XNBaseEntertainmentVC {
 
+    fileprivate lazy var musicVM: XNMusicVM = XNMusicVM()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-
-
-
+    override func loadData() {
+        baseVM = self.musicVM
+        musicVM.requestData {
+            self.collectionView.reloadData()
+            self.loadDataFinished()
+        }
+    }
 }

@@ -10,10 +10,18 @@ import UIKit
 
 class XNOutdoorLivingVC: XNBaseEntertainmentVC {
 
+    fileprivate lazy var outdoorVM: XNOutdoorLivingVM = XNOutdoorLivingVM()
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func loadData() {
+        baseVM = self.outdoorVM
+        outdoorVM.requestData {
+            self.collectionView.reloadData()
+            self.loadDataFinished()
+        }
     }
 
 }

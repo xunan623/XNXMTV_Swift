@@ -10,10 +10,16 @@ import UIKit
 
 class XNLovelyPetsVC: XNBaseEntertainmentVC {
 
+    fileprivate lazy var lovelyVM: XNLovelyPetsVM = XNLovelyPetsVM()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
 
+    override func loadData() {
+        baseVM = self.lovelyVM
+        lovelyVM.requestData {
+            self.collectionView.reloadData()
+            self.loadDataFinished()
+        }
+    }
 }

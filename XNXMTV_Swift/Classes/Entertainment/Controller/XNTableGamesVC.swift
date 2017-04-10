@@ -10,9 +10,16 @@ import UIKit
 
 class XNTableGamesVC: XNBaseEntertainmentVC {
 
+    fileprivate lazy var tableGamesVM: XNTableGamesVM = XNTableGamesVM()
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 
+    override func loadData() {
+        baseVM = self.tableGamesVM
+        tableGamesVM.requestData {
+            self.collectionView.reloadData()
+            self.loadDataFinished()
+        }
+    }
 }
