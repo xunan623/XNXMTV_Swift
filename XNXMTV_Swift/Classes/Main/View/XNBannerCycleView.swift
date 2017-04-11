@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let CycleCellID = "CycleCellID"
+private let CycleCellID = "XNCollectionCycleCell"
 
 class XNBannerCycleView: UIView {
 
@@ -21,7 +21,7 @@ class XNBannerCycleView: UIView {
             collectionView.reloadData()
             pageControl.numberOfPages = cycleModels?.count ?? 0
             let indexPath = IndexPath(item: (cycleModels?.count ?? 0) * 100, section: 0)
-            collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
+//            collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
             removeCycleTimer()
             addCycleTimer()
         }
@@ -61,7 +61,23 @@ extension XNBannerCycleView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CycleCellID, for: indexPath) as! XNCollectionCycleCell
+        cell.cycleModel = cycleModels![indexPath.item % cycleModels!.count]
         return cell
+    }
+}
+
+extension XNBannerCycleView: UICollectionViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let offsetX = scrollView.contentOffset.x + scrollView.bounds.width * 0.5
+        pageControl.currentPage = Int(offsetX / scrollView.bounds.width) % (cycleModels?.count ?? 1)
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        removeCycleTimer()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        addCycleTimer()
     }
 }
 

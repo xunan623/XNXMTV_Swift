@@ -30,7 +30,7 @@ class XNTabBarController: UITabBarController {
     }
     
     func addChildViewControllers() {
-        setupOneChildViewController("首页", image: "menu_homepage_nor", selectedImage: "menu_homepage_sel", controller: UIViewController.init())
+        setupOneChildViewController("首页", image: "menu_homepage_nor", selectedImage: "menu_homepage_sel", controller: XNHomeController.init())
         setupOneChildViewController("游戏", image: "menu_youxi_nor", selectedImage: "menu_youxi_sel", controller: XNGameController.init())
         setupOneChildViewController("娱乐", image: "menu_yule_nor", selectedImage: "menu_yule_sel", controller: XNEntertainmentController.init())
         setupOneChildViewController("小葱秀", image: "menu_goddess_nor", selectedImage: "menu_goddess_sel", controller: XNSmallShowController.init())

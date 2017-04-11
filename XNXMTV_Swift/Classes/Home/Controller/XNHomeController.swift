@@ -48,7 +48,7 @@ class XNHomeController: XNBaseController {
             childVcs.append(XNAllLivingVC())
             UserDefaults.standard.set(childVcs.count, forKey: DEFAULT_CHILDVCS)
         }
-        let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVC: self)
+        let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
         contentView.delegate = self
         return contentView
         }()
@@ -73,8 +73,8 @@ extension XNHomeController {
 
 // MARK: - PageTitleViewDelegate代理实现
 extension XNHomeController : XNPageMenuViewDelegate{
-    func pageMenuView(_ titleView: XNPageMenuView, seletedIndex index: Int) {
-        pageContentView.setCurrentIndex(currentIndex: index)
+    func pageMenuView(_ titleView: XNPageMenuView, selectedIndex: Int) {
+        pageContentView.setCurrentIndex(currentIndex: selectedIndex)
     }
 }
 

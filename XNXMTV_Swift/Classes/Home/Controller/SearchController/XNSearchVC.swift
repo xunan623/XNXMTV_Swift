@@ -27,7 +27,7 @@ class XNSearchVC: XNBaseController {
         var childVcs = [UIViewController]()
         childVcs.append(XNIsLivingVC())
         childVcs.append(XNUnLivingVC())
-        let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVC: self)
+        let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
         contentView.delegate = self
         return contentView
     }()

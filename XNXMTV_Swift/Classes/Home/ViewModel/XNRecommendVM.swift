@@ -22,7 +22,7 @@ extension XNRecommendVM {
     }
     
     // MARK: - 请求轮播数据
-    func requestCycleData(_ finishCallback : @escaping () -> ()) {
+    func requestCycleData(_ finishCallback : @escaping () -> ()){
         let parameters = ["__version": "1.1.7.1305", "__plat": "ios", "__channel": "appstore"]
         XNNetworkTool.reqeust(type: .GET, urlString: "http://api.m.panda.tv/ajax_rmd_ads_get", paramters: parameters) { (result) in
             guard let dict = result as? [String : Any] else { return }
@@ -30,6 +30,7 @@ extension XNRecommendVM {
             for dict in arr {
                 self.cycleModels.append(XNCycleModel(dict: dict))
             }
+            print("cycleModels - ",self.cycleModels)
             finishCallback()
         }
     }

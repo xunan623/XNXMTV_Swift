@@ -50,6 +50,7 @@ extension XNBaseRecommendVC {
 // MARK: - UICollectionView代理数据源方法
 extension XNBaseRecommendVC : UICollectionViewDataSource, UICollectionViewDelegate {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
+        collectionView.collectionViewLayout.invalidateLayout()
         return baseVM.anchorGroups.count
     }
     

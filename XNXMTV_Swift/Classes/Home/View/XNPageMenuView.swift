@@ -1,9 +1,9 @@
 //
-//  XNPageMenuView.swift
-//  XNXMTV_Swift
+//  PageMenuView.swift
+//  XMTV
 //
-//  Created by xunan on 2017/3/17.
-//  Copyright © 2017年 xunan. All rights reserved.
+//  Created by Mac on 2017/1/7.
+//  Copyright © 2017年 Mac. All rights reserved.
 //
 
 import UIKit
@@ -12,20 +12,19 @@ private let selectedColor = UIColor(r: 108, g: 198, b: 152)
 private let normalColor = UIColor.darkGray
 private let kScrollLineH: CGFloat = 4
 private let lineH: CGFloat = 0.5
-private let kAddButtonW: CGFloat = 40
+private let kAddButtonW:CGFloat = 40
 
 // MARK: - 代理
 protocol XNPageMenuViewDelegate: class {
-    func pageMenuView(_ titleView: XNPageMenuView, seletedIndex index : Int)
+    func pageMenuView(_ titleView : XNPageMenuView, selectedIndex index : Int)
 }
 
 class XNPageMenuView: UIView {
-    
+    // MARK: - 代理
     weak var delegate: XNPageMenuViewDelegate?
-    
-    fileprivate var channels: [XNGameModel] = [XNGameModel] ()
-    fileprivate var currentButtonIndex : Int = 0
-    
+    //    let common = Common()
+    fileprivate var channels: [XNGameModel] = [XNGameModel]()
+    fileprivate var currentButtonIndex :Int = 0
     // 默认的title就是精彩推荐和全部直播
     fileprivate var titles :[String] = ["精彩推荐", "全部直播"]
     fileprivate lazy var titleButtons: [UIButton] = [UIButton]()
@@ -54,12 +53,14 @@ class XNPageMenuView: UIView {
         return scrollLine
     }()
     
+    //    , titles: [String]
     override init(frame: CGRect) {
         super.init(frame: frame)
         addSubview(scrollView)
         scrollView.frame = bounds
         setupUI()
     }
+    
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -67,14 +68,10 @@ class XNPageMenuView: UIView {
 }
 
 extension XNPageMenuView {
-    
     // MARK: - 设置UI
     fileprivate func setupUI() {
         addSubview(rightButton)
-        rightButton.frame = CGRect(x: kScreenW - kAddButtonW,
-                                   y: 0,
-                               width: kAddButtonW,
-                              height: self.frame.size.height)
+        rightButton.frame = CGRect(x: kScreenW - kAddButtonW, y: 0, width: kAddButtonW, height: self.frame.size.height)
         setupTitleButtons()
         setupButtomLine()
         titleButtonClick(sender: titleButtons[0])
@@ -86,14 +83,13 @@ extension XNPageMenuView {
         let bH: CGFloat = frame.height - kScrollLineH
         let bY: CGFloat = 0
         
-        let newTitles = common.unarchiveToStringArray(appendPath: PAGE_TITLES)
-        if newTitles != nil {
-            self.titles = newTitles!
+        let newtitles = common.unarchiveToStringArray(appendPath: PAGE_TITLES)
+        if newtitles != nil {
+            self.titles = newtitles!
             print("newtitles-", self.titles)
-
         }
         
-        print("titles--", self.titles)
+        print("titles-", self.titles)
         for (index, title) in titles.enumerated() {
             let button = UIButton()
             button.tag = index
@@ -104,15 +100,14 @@ extension XNPageMenuView {
             button.setTitle(title, for: .normal)
             button.setTitleColor(normalColor, for: .normal)
             button.titleLabel?.font = UIFont.systemFont(ofSize: 14)
-            button.imageEdgeInsets = UIEdgeInsetsMake(0, -10, 0, 0)
-            button.titleEdgeInsets = UIEdgeInsetsMake(0, 0, 0, 10)
+            button.imageEdgeInsets = UIEdgeInsets(top: 0, left: -10, bottom: 0, right: 0)
+            button.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 10)
             
             let bX: CGFloat = bW * CGFloat(index)
-            button.frame = CGRect(x: bX, y: bY, width: bW, height: bH)
+            button.frame = CGRect(x: bX, y:bY , width: bW, height: bH)
             scrollView.addSubview(button)
             titleButtons.append(button)
             button.addTarget(self, action: #selector(self.titleButtonClick(sender:)), for: .touchUpInside)
-            
         }
         scrollView.contentSize = CGSize(width: bW * CGFloat(titles.count), height: 0)
     }
@@ -123,16 +118,12 @@ extension XNPageMenuView {
         buttomLine.backgroundColor = normalColor
         buttomLine.frame = CGRect(x: 0, y: frame.height - lineH, width: frame.width, height: lineH)
         addSubview(buttomLine)
-        
         guard let firstButton = titleButtons.first else { return }
         firstButton.setTitleColor(selectedColor, for: .normal)
         scrollView.addSubview(scrollLine)
-        scrollLine.frame = CGRect(x: firstButton.frame.origin.x + firstButton.frame.width * 0.1,
-                                  y: frame.height - kScrollLineH,
-                                  width: firstButton.frame.width * 0.8,
-                                  height: kScrollLineH)
-        
+        scrollLine.frame = CGRect(x: firstButton.frame.origin.x + firstButton.frame.width * 0.1, y: frame.height - kScrollLineH, width: firstButton.frame.width * 0.8, height: kScrollLineH)
     }
+    
 }
 
 // MARK: - 点击标题按钮
@@ -140,7 +131,7 @@ extension XNPageMenuView {
     
     // MARK: - 点击标题按钮
     @objc fileprivate func titleButtonClick(sender: UIButton) {
-        setupTitleCenter(button: sender);
+        setupTitleCenter(button: sender)
         if sender.tag == currentButtonIndex { return }
         if currentButtonIndex > titleButtons.count - 1 {
             currentButtonIndex = titleButtons.count - 1
@@ -156,25 +147,26 @@ extension XNPageMenuView {
         
         let scrollLinePosition = sender.frame.origin.x + sender.frame.width * 0.1
         scrollLine.frame.size.width = sender.frame.width * 0.8
-        UIView.animate(withDuration: 0.2, animations: { 
-            self.scrollLine.frame.origin.x = scrollLinePosition
-
+        UIView.animate(withDuration: 0.2, animations: {
+            self.scrollLine.frame.origin.x = scrollLinePosition//X
         })
         
-        delegate?.pageMenuView(self, seletedIndex: currentButtonIndex)
+        delegate?.pageMenuView(self, selectedIndex: currentButtonIndex)
+        
     }
-    // MARK: - 让标题按钮自动居中 (如果按钮的中心点 > 屏幕的中心点则将按钮中心点偏移)
+    // MARK: - 让标题按钮自动居中（如果按钮的中心点 > 屏幕的中心点则将按钮中心点偏移）
     fileprivate func setupTitleCenter(button: UIButton) {
         // 判断标题按钮是否需要移动
         var offsetX = button.center.x - kScreenW * 0.5
         let maxOffsetX = scrollView.contentSize.width - kScreenW
-        
-        if offsetX < 0 {
+        //        print("offsetX",offsetX)
+        //        print("maxOffsetX",maxOffsetX)
+        if (offsetX < 0) {
             offsetX = 0
         }
         
-        if offsetX > maxOffsetX {
-            // 当处于最后一个标题按钮并且maxOffsetX > 0 的时候, 为防止最右边按钮挡住, 需要增加一个偏移
+        if (offsetX > maxOffsetX) {
+            // 当处于最后一个标题按钮并且maxOffsetX > 0 的时候，为防止被最右边添加按钮挡住，需要增加一个偏移
             if button.tag == (self.titles.count - 1) {
                 if maxOffsetX > 0 {
                     offsetX = maxOffsetX + 40
@@ -186,13 +178,13 @@ extension XNPageMenuView {
             }
         }
         
-        scrollView.setContentOffset(CGPoint(x: offsetX, y:0), animated: true)
-        
+        scrollView.setContentOffset(CGPoint(x: offsetX, y: 0), animated: true)
     }
+    
     
     // MARK: - 点击添加按钮
     @objc fileprivate func addItemClick() {
-        if let nextResponder = next?.next, nextResponder.isKind(of: UIViewController.self) {
+        if let nextResponder = next?.next, nextResponder.isKind(of: UIViewController.self){
             let vc = nextResponder as! UIViewController
             let subcatevc = AllSubcaateController()
             vc.navigationController?.pushViewController(subcatevc, animated: true)
@@ -204,47 +196,45 @@ extension XNPageMenuView {
                 self.reloadTitles(newTitles)
             }
         }
-        
     }
 }
 
-extension XNPageMenuView {
-    func setTitleWithProgress(_ progress:CGFloat, sourceIndex:Int, targetIndex:Int) {
+//MARK:- 左右滑动屏幕，切换title时调用这个方法
+extension XNPageMenuView{
+    func setTitleWithProgress(_ progress:CGFloat,sourceIndex : Int,targetIndex : Int){
         let sourceButton = titleButtons[sourceIndex]
         let targetButton = titleButtons[targetIndex]
         let moveTotalX = targetButton.frame.origin.x - sourceButton.frame.origin.x
         let moveX = moveTotalX * progress
         
         sourceButton.setTitleColor(normalColor, for: .normal)
-        sourceButton.setImage(UIImage(named: titleToSting(title: targetButton.currentTitle!) + "_icon_13x13_") , for: .normal)
+        sourceButton.setImage(UIImage(named: titleToSting(title: sourceButton.currentTitle!) + "_icon_13x13_"), for: .normal)
         targetButton.setTitleColor(selectedColor, for: .normal)
         targetButton.setImage(UIImage(named: titleToSting(title: targetButton.currentTitle!) + "_h_icon_13x13_"), for: .normal)
         
-        scrollLine.frame.origin.x = sourceButton.frame.origin.x + sourceButton.frame.width * 0.1 + moveX
+        scrollLine.frame.origin.x = sourceButton.frame.origin.x + sourceButton.frame.width*0.1 + moveX
         currentButtonIndex = targetIndex
-        
     }
 }
 
-// MARK: - 刷新XNPageMenuView 
+// MARK: - 刷新PageMenuView
 extension XNPageMenuView {
-    
     fileprivate func reloadTitles(_ channels: [String]) {
-        scrollView.subviews.forEach { (subView) in
-            subView.removeFromSuperview()
+        scrollView.subviews.forEach { (subview) in
+            subview.removeFromSuperview()
         }
         titles.removeAll()
         titleButtons.removeAll()
-        
         // 重新设置UI
         self.titles = channels
         print("self.titles-", self.titles)
         common.archiveWithStringArray(channel: self.titles, appendPath: PAGE_TITLES)
         setupUI()
-        // 注意: 将当前的currentButtonIndex更新, 因为一旦移除了频道, titleButtons数组更新了, 如果不重置, 当取出按钮时, 则会发生数组越界
+        // 注意: 将当前的currentButtonIndex更新，因为一旦移除了频道，titleButtons数组更新了，如果不重置，当取出按钮时，则会发生数组越界
         currentButtonIndex = 0
     }
     
+    /// 因为这个标题按钮的图片是从本地加载的，而不是从网络获取的，本来是想将标题转换成小写首字母，但是尝试了多种办法后失败了，所以就用这种笨办法，如果你有更好的办法可以在github上 issu 我， 多谢！！！
     func titleToSting(title :String) -> String {
         if title == "精彩推荐" {return "jptj"}
         else if title == "全部直播" {return "alllive"}
@@ -288,5 +278,4 @@ extension XNPageMenuView {
         else if title == "暗黑破坏神3" {return "ahphs3"}
         else {return ""}
     }
-
 }

@@ -33,7 +33,7 @@ class XNEntertainmentController: UIViewController {
         childVcs.append(XNLovelyPetsVC())
         childVcs.append(XNTableGamesVC())
 
-        let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVC: self)
+        let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVc: self)
         contentView.delegate = self
         return contentView
     }()
