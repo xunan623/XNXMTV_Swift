@@ -27,12 +27,8 @@ class XNHomeController: XNBaseController {
         return vc
     }()
 
-    
-    fileprivate lazy var pageContentView: XNPageContentView = { [weak self] in
-        let contentFrame = CGRect(x: 0,
-                                  y: kStatusBarH + kNavigationBarH + kTitleViewH,
-                                  width: kScreenW,
-                                  height: kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH)
+    fileprivate lazy var pageContentView : XNPageContentView = { [weak self] in
+        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH, width: kScreenW, height: kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH)
         var childVcs = [UIViewController]()
         
         let savedCount = UserDefaults.standard.object(forKey: HOME_CHILDVCS) as? Int
@@ -46,17 +42,16 @@ class XNHomeController: XNBaseController {
                 }
             }
             UserDefaults.standard.set(childVcs.count, forKey: HOME_CHILDVCS)
-
+            print("childvcs-",childVcs)
         } else {
             childVcs.append(XNRecommendVC())
             childVcs.append(XNAllLivingVC())
             UserDefaults.standard.set(childVcs.count, forKey: DEFAULT_CHILDVCS)
-            
         }
         let contentView = XNPageContentView(frame: contentFrame, childVcs: childVcs, parentVC: self)
         contentView.delegate = self
         return contentView
-    }()
+        }()
     
     override func viewDidLoad() {
         super.viewDidLoad()

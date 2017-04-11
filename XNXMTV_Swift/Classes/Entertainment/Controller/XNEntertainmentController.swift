@@ -22,7 +22,10 @@ class XNEntertainmentController: UIViewController {
     }()
     
     fileprivate lazy var pageContentView: XNPageContentView = { [weak self] in
-        let contentFrame = CGRect(x: 0, y: kStatusBarH + kNavigationBarH + kTitleViewH + 0.5, width: kScreenW, height: kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH)
+        let contentFrame = CGRect(x: 0,
+                                  y: kStatusBarH + kNavigationBarH + kTitleViewH+0.5,
+                                  width: kScreenW,
+                                  height: kScreenH - kStatusBarH - kNavigationBarH - kTitleViewH - kTabBarH)
         var childVcs = [UIViewController]()
         childVcs.append(XNPandaStarShowVC())
         childVcs.append(XNOutdoorLivingVC())
@@ -39,11 +42,6 @@ class XNEntertainmentController: UIViewController {
         super.viewDidLoad()
         setupUI()
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-    }
-    
 }
 
 extension XNEntertainmentController {

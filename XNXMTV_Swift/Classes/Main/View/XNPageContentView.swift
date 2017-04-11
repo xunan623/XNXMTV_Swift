@@ -17,7 +17,7 @@ private let ContentCellID = "ContentCellID"
 class XNPageContentView: UIView {
 
     // 默认控制器
-    let defaultVcsCount = UserDefaults.standard.object(forKey: DEFAULT_CHILDVCS) as! Int
+    let defaultVcsCount = UserDefaults.standard.object(forKey: DEFAULT_CHILDVCS) as? Int
     fileprivate var isForbidScrollDelegate: Bool = false
     fileprivate var startOffsetX: CGFloat = 0
     fileprivate var childVcs : [UIViewController]
@@ -143,12 +143,13 @@ extension XNPageContentView {
     // MARK: - 刷新子控制器
     public func reloadChildVcs(newChildVcs: [UIViewController]) {
         print("newChildVcs-", newChildVcs)
-        if self.childVcs.count < (defaultVcsCount + newChildVcs.count) {
+        if self.childVcs.count < (defaultVcsCount! + newChildVcs.count) {
             for childVC in newChildVcs {
                 self.childVcs.append(childVC)
+                parentVC?.addChildViewController(childVC)
             }
         } else {
-            let count = self.childVcs.count - (defaultVcsCount + newChildVcs.count)
+            let count = self.childVcs.count - (defaultVcsCount! + newChildVcs.count)
             updateChildVcs(count: count)
         }
         UserDefaults.standard.set(self.childVcs.count, forKey: HOME_CHILDVCS)
@@ -158,7 +159,7 @@ extension XNPageContentView {
     // MARK: - 没有添加频道或者移除了所有的频道,回到默认状态
     public func setDefaultChildVcs() {
         // 移除 "精彩推荐" 和 "全部直播" 两个频道之外的所有控制器
-        let counts = self.childVcs.count - defaultVcsCount
+        let counts = self.childVcs.count - defaultVcsCount!
         updateChildVcs(count: counts)
         UserDefaults.standard.set(self.childVcs.count, forKey: HOME_CHILDVCS)
         collectionView.reloadData()

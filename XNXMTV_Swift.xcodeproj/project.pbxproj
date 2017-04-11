@@ -29,7 +29,6 @@
 		713A33771E7F77BE0022DF35 /* XNCollectionSubcateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A33751E7F77BE0022DF35 /* XNCollectionSubcateCell.swift */; };
 		713A33781E7F77BE0022DF35 /* XNCollectionSubcateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 713A33761E7F77BE0022DF35 /* XNCollectionSubcateCell.xib */; };
 		713A33801E7FDDA80022DF35 /* XNNetworkTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A337F1E7FDDA80022DF35 /* XNNetworkTool.swift */; };
-		713A33841E7FE0FA0022DF35 /* XNAppURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713A33831E7FE0FA0022DF35 /* XNAppURL.swift */; };
 		7155B2C21E8F93BC007B7BE5 /* XNGameVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155B2C11E8F93BC007B7BE5 /* XNGameVM.swift */; };
 		7155B2C71E8F9834007B7BE5 /* XNCollectionGameCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155B2C51E8F9834007B7BE5 /* XNCollectionGameCell.swift */; };
 		7155B2C81E8F9834007B7BE5 /* XNCollectionGameCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7155B2C61E8F9834007B7BE5 /* XNCollectionGameCell.xib */; };
@@ -40,6 +39,10 @@
 		7155B2D51E8F9C7D007B7BE5 /* XNCycleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155B2D41E8F9C7D007B7BE5 /* XNCycleModel.swift */; };
 		7155B2D81E8FA126007B7BE5 /* XNCollectionNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7155B2D61E8FA126007B7BE5 /* XNCollectionNormalCell.swift */; };
 		7155B2D91E8FA126007B7BE5 /* XNCollectionNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7155B2D71E8FA126007B7BE5 /* XNCollectionNormalCell.xib */; };
+		7175F4BB1E9C76C50072C285 /* XNSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175F4BA1E9C76C50072C285 /* XNSearchVC.swift */; };
+		7175F4BD1E9C83C60072C285 /* XNIsLivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175F4BC1E9C83C60072C285 /* XNIsLivingVC.swift */; };
+		7175F4BF1E9C83D90072C285 /* XNUnLivingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175F4BE1E9C83D90072C285 /* XNUnLivingVC.swift */; };
+		7175F4C11E9C84120072C285 /* XNIsLivingVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7175F4C01E9C84120072C285 /* XNIsLivingVM.swift */; };
 		717F3C641E95D4D800FAFBCB /* XNBaseRecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C631E95D4D800FAFBCB /* XNBaseRecommendVC.swift */; };
 		717F3C661E95D50000FAFBCB /* XNRecommendVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C651E95D50000FAFBCB /* XNRecommendVC.swift */; };
 		717F3C681E95D53300FAFBCB /* XNBaseSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 717F3C671E95D53300FAFBCB /* XNBaseSearchVC.swift */; };
@@ -97,7 +100,6 @@
 		713A33751E7F77BE0022DF35 /* XNCollectionSubcateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCollectionSubcateCell.swift; sourceTree = "<group>"; };
 		713A33761E7F77BE0022DF35 /* XNCollectionSubcateCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNCollectionSubcateCell.xib; sourceTree = "<group>"; };
 		713A337F1E7FDDA80022DF35 /* XNNetworkTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNNetworkTool.swift; sourceTree = "<group>"; };
-		713A33831E7FE0FA0022DF35 /* XNAppURL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNAppURL.swift; sourceTree = "<group>"; };
 		7155B2C11E8F93BC007B7BE5 /* XNGameVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNGameVM.swift; sourceTree = "<group>"; };
 		7155B2C51E8F9834007B7BE5 /* XNCollectionGameCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCollectionGameCell.swift; sourceTree = "<group>"; };
 		7155B2C61E8F9834007B7BE5 /* XNCollectionGameCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNCollectionGameCell.xib; sourceTree = "<group>"; };
@@ -108,6 +110,10 @@
 		7155B2D41E8F9C7D007B7BE5 /* XNCycleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCycleModel.swift; sourceTree = "<group>"; };
 		7155B2D61E8FA126007B7BE5 /* XNCollectionNormalCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNCollectionNormalCell.swift; sourceTree = "<group>"; };
 		7155B2D71E8FA126007B7BE5 /* XNCollectionNormalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = XNCollectionNormalCell.xib; sourceTree = "<group>"; };
+		7175F4BA1E9C76C50072C285 /* XNSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNSearchVC.swift; sourceTree = "<group>"; };
+		7175F4BC1E9C83C60072C285 /* XNIsLivingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNIsLivingVC.swift; sourceTree = "<group>"; };
+		7175F4BE1E9C83D90072C285 /* XNUnLivingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNUnLivingVC.swift; sourceTree = "<group>"; };
+		7175F4C01E9C84120072C285 /* XNIsLivingVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNIsLivingVM.swift; sourceTree = "<group>"; };
 		717F3C631E95D4D800FAFBCB /* XNBaseRecommendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBaseRecommendVC.swift; sourceTree = "<group>"; };
 		717F3C651E95D50000FAFBCB /* XNRecommendVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNRecommendVC.swift; sourceTree = "<group>"; };
 		717F3C671E95D53300FAFBCB /* XNBaseSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XNBaseSearchVC.swift; sourceTree = "<group>"; };
@@ -170,7 +176,6 @@
 			isa = PBXGroup;
 			children = (
 				713A337F1E7FDDA80022DF35 /* XNNetworkTool.swift */,
-				713A33831E7FE0FA0022DF35 /* XNAppURL.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -191,12 +196,23 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		7175F4B91E9C768D0072C285 /* SearchController */ = {
+			isa = PBXGroup;
+			children = (
+				7175F4BA1E9C76C50072C285 /* XNSearchVC.swift */,
+				7175F4BC1E9C83C60072C285 /* XNIsLivingVC.swift */,
+				7175F4BE1E9C83D90072C285 /* XNUnLivingVC.swift */,
+			);
+			path = SearchController;
+			sourceTree = "<group>";
+		};
 		7185FA9C1E949AA800F69524 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 				7185FA9D1E949AF500F69524 /* XNMoreLivingVM.swift */,
 				717F3C6D1E96143000FAFBCB /* XNRecommendVM.swift */,
 				712A25011E9796BD00EA5F1A /* XNAllLivingVM.swift */,
+				7175F4C01E9C84120072C285 /* XNIsLivingVM.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -305,6 +321,7 @@
 		71A16C8E1E7B6EA0008289CA /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7175F4B91E9C768D0072C285 /* SearchController */,
 				71A16CAE1E7BB4C5008289CA /* XNHomeController.swift */,
 				713A33731E7F63990022DF35 /* AllSubcaateController.swift */,
 				7185FA9A1E94958900F69524 /* XNMoreLivingController.swift */,
@@ -648,9 +665,11 @@
 			files = (
 				711449E81E94F225000B753F /* XNTableGamesVC.swift in Sources */,
 				7129F6AB1E9B57D2003CBD42 /* XNPandaStarShowVM.swift in Sources */,
+				7175F4BB1E9C76C50072C285 /* XNSearchVC.swift in Sources */,
 				71A16CB91E7BB78F008289CA /* XNMeController.swift in Sources */,
 				71A16CAF1E7BB4C5008289CA /* XNHomeController.swift in Sources */,
 				7155B2C71E8F9834007B7BE5 /* XNCollectionGameCell.swift in Sources */,
+				7175F4BD1E9C83C60072C285 /* XNIsLivingVC.swift in Sources */,
 				711449DC1E94CBBF000B753F /* XNPageTitleView.swift in Sources */,
 				71A16CAD1E7BB475008289CA /* XNBaseController.swift in Sources */,
 				71A16CA91E7BAF17008289CA /* Common.swift in Sources */,
@@ -663,7 +682,6 @@
 				7185FA9E1E949AF500F69524 /* XNMoreLivingVM.swift in Sources */,
 				7155B2CA1E8F9B40007B7BE5 /* XNBaseEntertainmentVC.swift in Sources */,
 				719C05BD1E9B21FD00777AF6 /* XNCollectionSearchCell.swift in Sources */,
-				713A33841E7FE0FA0022DF35 /* XNAppURL.swift in Sources */,
 				7155B2C21E8F93BC007B7BE5 /* XNGameVM.swift in Sources */,
 				711449E61E94F20E000B753F /* XNLovelyPetsVC.swift in Sources */,
 				71B051D51E7A85E500380B04 /* AppDelegate.swift in Sources */,
@@ -687,11 +705,13 @@
 				713A33741E7F63990022DF35 /* AllSubcaateController.swift in Sources */,
 				713A33801E7FDDA80022DF35 /* XNNetworkTool.swift in Sources */,
 				713A33771E7F77BE0022DF35 /* XNCollectionSubcateCell.swift in Sources */,
+				7175F4C11E9C84120072C285 /* XNIsLivingVM.swift in Sources */,
 				71A16CBB1E7BBADF008289CA /* XNPageMenuView.swift in Sources */,
 				711449E41E94F1F4000B753F /* XNMusicVC.swift in Sources */,
 				711449E01E94F1BE000B753F /* XNPandaStarShowVC.swift in Sources */,
 				7155B2D51E8F9C7D007B7BE5 /* XNCycleModel.swift in Sources */,
 				71A16CA21E7B6FA1008289CA /* XNTabBarController.swift in Sources */,
+				7175F4BF1E9C83D90072C285 /* XNUnLivingVC.swift in Sources */,
 				7129F6B31E9B598F003CBD42 /* XNTableGamesVM.swift in Sources */,
 				712A25021E9796BD00EA5F1A /* XNAllLivingVM.swift in Sources */,
 				7129F6B11E9B593E003CBD42 /* XNLovelyPetsVM.swift in Sources */,

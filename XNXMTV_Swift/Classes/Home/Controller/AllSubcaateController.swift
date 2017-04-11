@@ -123,7 +123,7 @@ extension AllSubcaateController {
     fileprivate func requestData() {
         
         XNNetworkTool.reqeust(type: .GET,
-                              urlString: AppMormalURL_Subcate,
+                              urlString: "http://api.m.panda.tv/ajax_get_all_subcate",
                               paramters: ["__version" : "1.1.7.1305",
                                           "__plat"    : "ios",
                                           "__channel" : "appstore"]) { (result) in

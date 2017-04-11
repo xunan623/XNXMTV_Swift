@@ -60,7 +60,8 @@ class XNNavigationController: UINavigationController {
     
     /// 点击右边的搜索
     func searchClick() {
-        
+        let searchVC = XNSearchVC()
+        self.pushViewController(searchVC, animated: true)
     }
     
 }

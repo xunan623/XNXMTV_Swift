@@ -156,9 +156,10 @@ extension XNPageMenuView {
         
         let scrollLinePosition = sender.frame.origin.x + sender.frame.width * 0.1
         scrollLine.frame.size.width = sender.frame.width * 0.8
-        UIView.animate(withDuration: 0.2) { 
+        UIView.animate(withDuration: 0.2, animations: { 
             self.scrollLine.frame.origin.x = scrollLinePosition
-        }
+
+        })
         
         delegate?.pageMenuView(self, seletedIndex: currentButtonIndex)
     }
